@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern 11</title>
+    <script>
+      function arrow() {
+        var i, j, k, l, m, n, o, p;
+        num = document.getElementById("input_field").value;
+        for (i = 1; i <= num; i++) {
+          for (k = 1; k <= i - 1; k++) {
+            document.write("&nbsp ");
+          }
+          for (j = 1; j <= num; j++) {
+            console.log(j);
+            document.write("* ");
+          }
+          document.write("<br />");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label>Enter number of rows</label>
+      <input id="input_field" />
+      <button type="button" onclick="arrow()">ENTER</button>
+    </div>
+  </body>
+</html>

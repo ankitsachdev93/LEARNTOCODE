@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern 12</title>
+    <script>
+      function arrow() {
+        var i, j, k, l, m, n, o, p;
+        num = document.getElementById("input_field").value;
+        for (i = 1; i < num; i++) {
+          for (k = i; k <= num; k++) {
+            document.write("* ");
+          }
+          for (j = 1; j <= i; j++) {
+            document.write("&nbsp ");
+          }
+          document.write("<br />");
+        }
+        for (m = 1; m <= num; m++) {
+          for (o = 1; o <= m; o++) {
+            document.write("* ");
+          }
+          for (n = m; n <= num; n++) {
+            document.write("&nbsp ");
+          }
+          document.write("<br />");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label>Enter number of rows</label>
+      <input id="input_field" />
+      <button type="button" onclick="arrow()">ENTER</button>
+    </div>
+  </body>
+</html>
