@@ -1,0 +1,5 @@
+triangle
+rectangle
+right angle triangle
+left angle triangle
+
